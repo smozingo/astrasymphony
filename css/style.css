@@ -1,0 +1,158 @@
+body {
+
+    font-family:arial, helvetica, sans-serif;
+    background-color: black;
+}
+/* ==== Top bar containing main menu */
+#topbar {
+    height: 250px;
+    max-width:1100px;
+    background-image: url(../img/astradanceco.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 95%;
+}
+
+
+.fixedwidth {
+    width:1000px;
+    margin:0 auto;  /* centers a div within another div */
+    position:relative;
+}
+
+#logodiv {
+    margin-top: 20px;
+    float: left;
+}
+
+#menubar {
+    max-width: 1100px;
+}
+
+.topmenudiv {
+    margin-left: 35px;
+    float:left;
+}
+
+.topmenudiv ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topmenudiv li {
+    margin: 5px 0 5px 0;
+    padding: 10px 20px 12px 20px;
+    border-right: 1px solid #910000;
+    float:left;
+}
+
+
+.topmenudiv a {
+    display:block;
+    height:12px;
+    font-size:1.1em;
+    width:200px;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+}
+
+
+.topmenudiv a:hover {
+    display:block;
+    color:#dda410;
+    text-decoration:none;
+}
+
+
+.menu-link {
+    display:block;
+    height:12px;
+    font-size:1.1em;
+    width:200px;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+}
+
+
+
+#astra-main {
+    margin-left: 110px;
+    padding:20px 20px 20px 20px;
+    max-width: 900px;
+    background-image: url(../img/parchmentlightbg.jpg);
+    background-size: cover;
+    background-color: azure;
+    border-radius: 10px;
+    height:1600px;
+}
+
+h2 {
+    align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.break {
+    clear:both;
+}
+
+#main-text{
+    padding: 0 100px 0 100px;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+#media-container{
+     margin: 20px auto;
+     width: 50%;
+     display: none;
+}
+
+#slideshow-container{
+    margin: 20px auto;
+    width: 50%;
+    display: none;
+}
+
+#audio-container{
+    margin: 50px auto;
+    width: 50%;
+    display: none;
+}
+
+#pic-container{
+    margin: 40px auto;
+    max-width: 540px;
+}
+
+#audio-overture {
+    height:80px;
+    width:444px;
+    background-image: url(../img/btnOverture.jpg);
+    cursor: pointer;
+}
+
+#audio-carnival {
+    height:80px;
+    width:444px;
+    background-image: url(../img/btnCarnivalCharacters.jpg);
+    cursor: pointer;
+}
+
+#audio-finale {
+    height:80px;
+    width:444px;
+    background-image: url(../img/btnFinale.jpg);
+    cursor: pointer;
+}
+
+#copyright {
+    position: absolute;
+    margin-top: 1600px;
+    font-size: x-small;
+    font-style: italic;
+}
