@@ -1,10 +1,37 @@
 body {
 
-    font-family:arial, helvetica, sans-serif;
+    font-family: Geneva;
+    font-size:1.1em;
     background-color: black;
+
 }
-/* ==== Top bar containing main menu */
+
+
+#container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5a2c13;
+}
+
 #topbar {
+    position:relative;
+    height: 220px;
+    max-width:1100px;
+    padding-left:185px;
+}
+
+#topbarimg {
+    max-width:870px;
+    left:185px;
+}
+
+#topbar1 {
     height: 250px;
     max-width:1100px;
     background-image: url(../img/astradanceco.jpg);
@@ -21,8 +48,13 @@ body {
 }
 
 #logodiv {
-    margin-top: 20px;
+    position:relative;
+    margin-top: -202px;
     float: left;
+}
+
+#logodiv img {
+    width:330px;
 }
 
 #menubar {
@@ -30,7 +62,7 @@ body {
 }
 
 .topmenudiv {
-    margin-left: 35px;
+    margin-left: 100px;
     float:left;
 }
 
@@ -39,11 +71,12 @@ body {
     margin:0;
     padding: 0;
     overflow: hidden;
+    font-size: 1.3em;
 }
 
 .topmenudiv li {
     margin: 5px 0 5px 0;
-    padding: 10px 20px 12px 20px;
+    padding: 0 20px 12px 20px;
     border-right: 1px solid #910000;
     float:left;
 }
@@ -53,10 +86,11 @@ body {
     display:block;
     height:12px;
     font-size:1.1em;
-    width:200px;
+    width:120px;
     color:white;
     text-align:center;
     text-decoration:none;
+    font-weight:normal;
 }
 
 
@@ -71,7 +105,7 @@ body {
     display:block;
     height:12px;
     font-size:1.1em;
-    width:200px;
+    width:120px;
     color:white;
     text-align:center;
     text-decoration:none;
@@ -80,7 +114,8 @@ body {
 
 
 #astra-main {
-    margin-left: 110px;
+    position: relative;
+    margin-left: 65px;
     padding:20px 20px 20px 20px;
     max-width: 900px;
     background-image: url(../img/parchmentlightbg.jpg);
@@ -90,8 +125,8 @@ body {
     height:1600px;
 }
 
-h2 {
-    align: center;
+h3 {
+    text-align: center;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -99,34 +134,157 @@ h2 {
     clear:both;
 }
 
+
 #main-text{
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 0 100px;
     margin: 0 auto;
     max-width: 900px;
-    text-align: left;
+    text-align: center;
+    display:none;
 }
 
-#media-container{
+#discover-container {
+    padding: 30px 100px 0 100px;
+}
+
+#discover-link {
+    color: #dda410;
+}
+
+#discover-flourish {
+    position: relative;
+    float:right;
+    top: -475px;
+    left: 14px;
+}
+
+#discover-flourish img {
+    height:450px;
+}
+
+#discover-img {
+    position:relative;
+    top: -20px;
+}
+
+#see-flourish-left {
+    position:relative;
+    float:left;
+    top: 295px;
+    left:-25px;
+}
+
+#see-flourish-right {
+    position:relative;
+    float:right;
+    top: 295px;
+    left:55px;
+}
+
+#right-corner-flourish {
+    position: absolute;
+    float: right;
+    bottom: 3px;
+    right: 5px;
+}
+
+
+#mgmt-img {
+    position:relative;
+    float:right;
+    top:65px;
+}
+
+
+#epk {
+    border: solid 1px black;
+    padding:3px;
+    width:133px;
+    height:235px;
+    position:relative;
+    top:-34px;
+    left:30px;
+}
+
+#epk img {
+    position: relative;
+    top: -20px;
+}
+
+#epk figcaption {
+    position: relative;
+    top: -20px;
+}
+
+#mgmt-info {
+    font-size:0.8em;
+    width:225px;
+    float:right;
+    position: relative;
+    left:-82px;
+    margin-bottom: 10px;
+}
+
+#mgmt-contact {
+    position:relative;
+    float:left;
+}
+
+#map {
+    padding:3px 0 0 10px;
+    margin-top:20px;
+}
+
+#discover-text {
+    margin-top:10px;
+}
+
+#composer-info {
+    border: 1px;
+}
+#composer-text {
+    padding: 40px 100px 0 210px;
+    max-width: 600px;
+    text-align: left;
+    display:none;
+}
+
+#composer-img {
+    position: relative;
+    left: 95px;
+    top: -107px;
+    float:left;
+    display: none;
+}
+
+#composer-img img {
+    border: black;
+    border-width: 3px;
+    border-style: double;
+    height: 100px;
+}
+
+#experience-container {
      margin: 20px auto;
      width: 50%;
      display: none;
 }
 
-#slideshow-container{
+#see-container {
     margin: 20px auto;
     width: 50%;
     display: none;
 }
 
-#audio-container{
+#hear-container{
     margin: 50px auto;
     width: 50%;
     display: none;
 }
 
-#pic-container{
-    margin: 40px auto;
-    max-width: 540px;
+#contact-container {
+    margin: 20px auto;
+    display: none;
 }
 
 #audio-overture {
@@ -139,7 +297,7 @@ h2 {
 #audio-carnival {
     height:80px;
     width:444px;
-    background-image: url(../img/btnCarnivalCharacters.jpg);
+    background-image: url(../img/btnCarnival.jpg);
     cursor: pointer;
 }
 
@@ -150,9 +308,14 @@ h2 {
     cursor: pointer;
 }
 
+
 #copyright {
     position: absolute;
     margin-top: 1600px;
     font-size: x-small;
     font-style: italic;
 }
+
+
+
+
