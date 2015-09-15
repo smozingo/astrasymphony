@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Astra Dance Company</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="topbar">
+            <div class="fixedwidth">
+                    <div id="logodiv">
+                        <a href=""><img src="img/logo.png" /></a>
+                    </div>
+            </div>
+        </div>
+        <div id="menubar">
+            <div class="fixedwidth">
+                <div class="topmenudiv">
+                    <ul>
+                        <li id="see-link" class="menu-link">See</li>
+                        <li id="hear-link" class="menu-link">Hear</li>
+                        <li id="experience-link" class="menu-link">Experience</li>
+                        <li id="contact-link" style="border-right: none"><a href="mailto:info@astradance.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="break"></div>
+
+        <div id="astra-main">
+            <div id="copyright">Copyright &copy <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script> Artisan WebCraft</div>
+            <h2 align="center">Astra Dance Company Symphony Experience</h2>
+            <p id="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+            <div id="pic-container">
+                <img src="img/cg8.jpeg" width="540" height="327" alt="Astra Dance Company">
+            </div>
+            <div id="media-container">
+                <div class="html5gallery" data-skin="mediapage" data-width="480" data-height="272" style="display:none;">
+                    <a href="https://youtu.be/cRabmJNtq1I"><img src="img/caligaricropped.jpg"</a>
+                    <a href="https://youtu.be/4-oRWpj82dM"><img src="img/caligari2.jpg"</a>
+                    <a href="https://youtu.be/qMGvdLe6WKo"><img src="img/caligari3.jpg"</a>
+                </div>
+            </div>
+            <div id="slideshow-container">
+                <div class="html5gallery" data-skin="gallery" data-width="480" data-height="272" style="display:none;">
+
+                   <a href="img/cg1.jpg"><img src="img/cg1.jpg"></a>
+                    <a href="img/cg2.jpg"><img src="img/cg2.jpg"></a>
+                    <a href="img/cg3.jpg"><img src="img/cg3.jpg"></a>
+                    <a href="img/cg4.jpg"><img src="img/cg4.jpg"></a>
+                    <a href="img/cg5.jpg"><img src="img/cg5.jpg"></a>
+                    <a href="img/cg6.jpg"><img src="img/cg6.jpg"></a>
+                    <a href="img/cg7.jpg"><img src="img/cg7.jpg"></a>
+                    <a href="img/cg8.jpg"><img src="img/cg8.jpg"></a>
+                    <a href="img/cg9.jpg"><img src="img/cg9.jpg"></a>
+                    <a href="img/cg10.jpg"><img src="img/cg10.jpg"></a>
+                    <a href="img/cg11.jpg"><img src="img/cg11.jpg"></a>
+                    <a href="img/cg12.jpg"><img src="img/cg12.jpg"></a>
+                    <a href="img/cg13.jpg"><img src="img/cg13.jpg"></a>
+                    <a href="img/cg14.jpg"><img src="img/cg14.jpg"></a>
+                    <a href="img/cg15.jpg"><img src="img/cg15.jpg"></a>
+                    <a href="img/cg16.jpg"><img src="img/cg16.jpg"></a>
+                    <a href="img/cg17.jpg"><img src="img/cg17.jpg"></a>
+                    <a href="img/cg18.jpg"><img src="img/cg18.jpg"></a>
+                    <a href="img/cg19.jpg"><img src="img/cg19.jpg"></a>
+                    <a href="img/cg20.jpg"><img src="img/cg20.jpg"></a>
+                    <a href="img/cg21.jpg"><img src="img/cg21.jpg"></a>
+                    <a href="img/cg22.jpg"><img src="img/cg22.jpg"></a>
+                    <a href="img/cg23.jpg"><img src="img/cg23.jpg"></a>
+                    <a href="img/cg24.jpg"><img src="img/cg24.jpg"></a>
+                    <a href="img/cg25.jpg"><img src="img/cg25.jpg"></a>
+                    <a href="img/cg26.jpg"><img src="img/cg26.jpg"></a>
+
+                </div>
+            </div>
+            <div id="audio-container">
+                <audio id="player-overture" src="media/Overture.mp3"></audio>
+                <audio id="player-carnival" src="media/CarnivalCharacters.mp3"></audio>
+                <audio id="player-finale" src="media/Finale.mp3"></audio>
+
+                <button id="audio-overture" onclick="playOverture()"></button>
+                <button id="audio-carnival" onclick="playCarnival()"></button>
+                <button id="audio-finale" onclick="playFinale()"></button>
+                </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        $(".menu-link").hover(function() {
+           $(this).css("color", "#dda410");
+           $(this).css("cursor", "pointer");
+        });
+
+        $(".menu-link").mouseleave(function() {
+            $(this).css("color", "white");
+            $(this).css("cursor", "normal");
+        });
+
+        $("#experience-link").click(function() {
+            $("#pic-container").css("display", "none");
+            $("#audio-container").css("display", "none");
+            $("#slideshow-container").css("display", "none");
+            $("#experience-link").css("color","red");
+            $("#main-text").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. <b>Lorem</b> Praesent libero. <i>Lorem</i> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <i>dapibus</i> Fusce nec <i>diam.</i> tellus sed augue semper porta. <b>imperdiet.</b> Mauris massa. Vestibulum <b>sed</b> lacinia arcu eget <i>Praesent</i> nulla. Class aptent taciti <b>lacinia</b> sociosqu <b>massa.</b> ad litora <i>Mauris</i> torquent per <i>augue</i> conubia <b>eget</b> nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>per</b> libero. Sed <i>torquent</i> dignissim lacinia nunc. <i>litora</i> Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula <i>lacinia</i> vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, <b>egestas</b> luctu.");
+            $("#media-container").css("display", "block");
+        });
+
+        $("#hear-link").click(function() {
+            $("#pic-container").css("display", "none");
+            $("#media-container").css("display", "none");
+            $("#slideshow-container").css("display", "none");
+            $("#hear-link").css("color","red");
+            $("#main-text").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. <i>Lorem</i> Sed nisi. Nulla <b>cursus</b> quis <b>Praesent</b> sem at <i>Lorem</i> nibh elementum <i>Lorem</i> imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent <i>nibh</i> taciti socosq.");
+            $("#audio-container").css("display", "block");
+        });
+
+        $("#see-link").click(function() {
+            $("#pic-container").css("display", "none");
+            $("#media-container").css("display", "none");
+            $("#audio-container").css("display", "none");
+            $("#see-link").css("color","red");
+            $("#main-text").html("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer <b>Lorem</b> nec odio. <b>Lorem</b> Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. <b>Sed</b> Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. <b>nibh</b> Fusce nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. <i>at</i> Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at <i>torquent</i> dolor. Maecenas mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <i>Aenean</i> vel, suscipit quis, luctu.");
+            $("#slideshow-container").css("display", "block");
+        });
+
+        var OverturePlaying = 0;
+        var FinalePlaying = 0;
+        var CarnivalPlaying = 0;
+
+        function playOverture() {
+            if (OverturePlaying) {
+                OverturePlaying = 0;
+                $("#audio-overture").css("background-image"," url(img/btnOverture.jpg)");
+                document.getElementById('player-overture').pause();
+            }
+            else {
+                OverturePlaying = 1;
+                document.getElementById('player-carnival').pause();
+                document.getElementById('player-finale').pause();
+                $("#audio-carnival").css("background-image"," url(img/btnCarnivalCharacters.jpg)");
+                $("#audio-finale").css("background-image"," url(img/btnFinale.jpg)");
+                $("#audio-overture").css("background-image"," url(img/btnOvertureOn.jpg)");
+                document.getElementById('player-overture').play();
+            }
+        }
+
+        function playFinale() {
+            if (FinalePlaying) {
+                FinalePlaying = 0;
+                $("#audio-finale").css("background-image"," url(img/btnFinale.jpg)");
+                document.getElementById('player-finale').pause();
+            }
+            else {
+                FinalePlaying = 1;
+                document.getElementById('player-carnival').pause();
+                document.getElementById('player-overture').pause();
+                $("#audio-carnival").css("background-image"," url(img/btnCarnivalCharacters.jpg)");
+                $("#audio-overture").css("background-image"," url(img/btnOverture.jpg)");
+                $("#audio-finale").css("background-image","url(img/btnFinaleOn.jpg)");
+                document.getElementById('player-finale').play();
+            }
+        }
+
+        function playCarnival() {
+            if(CarnivalPlaying) {
+                CarnivalPlaying = 0;
+                $("#audio-carnival").css("background-image"," url(img/btnCarnivalCharacters.jpg)");
+                document.getElementById('player-carnival').pause();
+            }
+            else {
+                CarnivalPlaying = 1;
+                document.getElementById('player-finale').pause();
+                document.getElementById('player-overture').pause();
+                $("#audio-overture").css("background-image"," url(img/btnOverture.jpg)");
+                $("#audio-finale").css("background-image"," url(img/btnFinale.jpg)");
+                $("#audio-carnival").css("background-image"," url(img/btnCarnivalCharactersOn.jpg)");
+                document.getElementById('player-carnival').play();
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
