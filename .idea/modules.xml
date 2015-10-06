@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/astrasymphony.iml" filepath="$PROJECT_DIR$/.idea/astrasymphony.iml" />
+      <module fileurl="file://F:/WebstormProjects/astradancetheatre/.idea/astradancetheatre.iml" filepath="F:/WebstormProjects/astradancetheatre/.idea/astradancetheatre.iml" />
     </modules>
   </component>
 </project>

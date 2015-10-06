@@ -1,11 +1,10 @@
 body {
 
-    font-family: Geneva;
+    font-family: Geneva, Georgia, Times New Roman, serif;
     font-size:1.1em;
     background-color: black;
 
 }
-
 
 #container {
     position: relative;
@@ -16,7 +15,24 @@ body {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #5a2c13;
+    color: white;
+}
+
+.enhancedText {
+    font-family: Tahoma, serif;
+}
+
+.cursiveText {
+    font-family: Tangerine;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.bigBoldText {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #topbar {
@@ -31,13 +47,8 @@ a {
     left:185px;
 }
 
-#topbar1 {
-    height: 250px;
-    max-width:1100px;
-    background-image: url(../img/astradanceco.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 95%;
+.selected {
+    color: #dda410 !important;
 }
 
 
@@ -59,11 +70,13 @@ a {
 
 #menubar {
     max-width: 1100px;
+    position: relative;
+    left: 150px;
+    height: 36px;
 }
 
 .topmenudiv {
-    margin-left: 100px;
-    float:left;
+    margin-top:-32px;
 }
 
 .topmenudiv ul {
@@ -71,13 +84,14 @@ a {
     margin:0;
     padding: 0;
     overflow: hidden;
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
 }
 
 .topmenudiv li {
     margin: 5px 0 5px 0;
-    padding: 0 20px 12px 20px;
+    padding: 0 10px 12px 10px;
     border-right: 1px solid #910000;
+    color:white;
     float:left;
 }
 
@@ -85,9 +99,8 @@ a {
 .topmenudiv a {
     display:block;
     height:12px;
-    font-size:1.1em;
-    width:120px;
-    color:white;
+/*    font-size:1.1em;*/
+    width:80px;
     text-align:center;
     text-decoration:none;
     font-weight:normal;
@@ -104,8 +117,8 @@ a {
 .menu-link {
     display:block;
     height:12px;
-    font-size:1.1em;
-    width:120px;
+/*    font-size:1.1em;*/
+    width:110px;
     color:white;
     text-align:center;
     text-decoration:none;
@@ -122,8 +135,26 @@ a {
     background-size: cover;
     background-color: azure;
     border-radius: 10px;
-    height:1600px;
+    height:1000px;
 }
+
+#copyright {
+    position: absolute;
+    margin-top: 1000px;
+    font-size: x-small;
+    font-style: italic;
+}
+
+hr {
+    background-image: url(../img/flourish-hb.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 57px;
+    border: none;
+    background-position: center;
+    margin-bottom:40px;
+}
+
 
 h3 {
     text-align: center;
@@ -151,20 +182,112 @@ h3 {
     color: #dda410;
 }
 
+#discover-img {
+    position:relative;
+    float:left;
+    top: -20px;
+    height: 460px;
+}
+
+#discover-img img {
+    height: 451px;
+    width: 674px;
+}
+
 #discover-flourish {
     position: relative;
-    float:right;
-    top: -475px;
-    left: 14px;
+    float:left  ;
+    top: -455px;
+    left: 660px;
 }
 
 #discover-flourish img {
+    width: initial;
     height:450px;
 }
 
-#discover-img {
-    position:relative;
-    top: -20px;
+
+#about-container {
+    display: none;
+}
+
+#about-container p {
+    text-align: justify;
+    padding:0 70px 0 50px;
+}
+
+#about-container div {
+    min-height: 260px;
+}
+
+.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.link-graphic {
+    position: relative;
+    float: left;
+    margin: 0 50px 10px 10px;
+}
+
+#see-link {
+    width: 225px;
+    height:130px;
+    background-image: url(../img/see.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#see-preload {
+    background: url(../img/seeOn.png) no-repeat -9999px -9999px;
+}
+
+#see-link:hover {
+    cursor: pointer;
+    background-image: url(../img/seeOn.png);
+}
+
+#hear-link {
+    width: 225px;
+    height:130px;
+    background-image: url(../img/hear.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hear-preload {
+    background: url(../img/hearOn.png)  no-repeat -9999px -9999px;
+}
+
+#hear-link:hover {
+    cursor: pointer;
+    background-image: url(../img/hearOn.png);
+}
+
+#experience-link {
+    width: 225px;
+    height:130px;
+    background-image: url(../img/experience.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#experience-preload {
+    background: url(../img/experienceOn.png)  no-repeat -9999px -9999px;
+}
+
+#experience-link:hover {
+    cursor: pointer;
+    background-image: url(../img/experienceOn.png);
 }
 
 #see-flourish-left {
@@ -198,7 +321,7 @@ h3 {
 
 #epk {
     border: solid 1px black;
-    padding:3px;
+    padding: 3px 3px 9px 3px;
     width:133px;
     height:235px;
     position:relative;
@@ -237,6 +360,8 @@ h3 {
 
 #discover-text {
     margin-top:10px;
+    text-align: justify;
+    padding-right: 55px;
 }
 
 #composer-info {
@@ -264,6 +389,11 @@ h3 {
     height: 100px;
 }
 
+#composer-link {
+    font-weight: normal;
+    color: darkred;
+}
+
 #experience-container {
      margin: 20px auto;
      width: 50%;
@@ -287,34 +417,8 @@ h3 {
     display: none;
 }
 
-#audio-overture {
-    height:80px;
-    width:444px;
-    background-image: url(../img/btnOverture.jpg);
-    cursor: pointer;
-}
-
-#audio-carnival {
-    height:80px;
-    width:444px;
-    background-image: url(../img/btnCarnival.jpg);
-    cursor: pointer;
-}
-
-#audio-finale {
-    height:80px;
-    width:444px;
-    background-image: url(../img/btnFinale.jpg);
-    cursor: pointer;
-}
 
 
-#copyright {
-    position: absolute;
-    margin-top: 1600px;
-    font-size: x-small;
-    font-style: italic;
-}
 
 
 
