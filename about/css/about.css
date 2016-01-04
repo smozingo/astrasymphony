@@ -1,0 +1,19 @@
+
+#astra-main {
+    /*height: 1850px;*/
+    height: auto;
+}
+
+#astra-title {
+    margin: -45px 0 -20px -35px;
+    height: 210px;
+}
+
+.teamImg{
+    height: 250px;
+    position: relative;
+    float: left;
+    margin: 0 15px 8px 0;
+    border: 1px solid black;
+}
+

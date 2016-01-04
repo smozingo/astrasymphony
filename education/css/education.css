@@ -1,0 +1,24 @@
+
+
+#astra-main {
+/*    height: 1750px;*/
+    height: auto;
+}
+
+#discover-container {
+    padding: 450px 100px 0 100px;
+}
+
+#discover-flourish {
+    position: relative;
+    float: left;
+    top: 13px;
+    left: 96px;
+}
+
+#discover-img img {
+    position: relative;
+    top: 31px;
+    left: 110px;
+}
+

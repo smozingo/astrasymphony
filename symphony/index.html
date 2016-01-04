@@ -2,22 +2,24 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Astra Dance Theatre</title>
+    <title>Symphony</title>
     <link rel="shortcut icon" href="../img/Astrafavicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/Astrafavicon.ico" type="image/x-icon">
 
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../html5gallery/html5gallery.js"></script>
+    <script type="text/javascript" src="../js/slideshow.js"></script>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/symphony.css" type="text/css" />
-
-
 </head>
 
 <body>
     <div id="see-preload"></div>
     <div id="hear-preload"></div>
     <div id="experience-preload"></div>
+    <div id="overture-preload"></div>
+    <div id="carnival-preload"></div>
+    <div id="finale-preload"></div>
 
     <div id="container">
         <div id="topbar">
@@ -35,39 +37,47 @@
                         <li><a href="..">Astra</a></li>
                         <li><a href="../caligari">Caligari</a></li>
                         <li><a class="selected" href="../symphony">Symphony</a></li>
-                        <li><a href="../museum">Museum</a></li>
+                        <li class="menu-wide"><a href="../museum" class="menu-wide">Museum Without Walls</a></li>
                         <li><a href="../education">Education</a></li>
                         <li><a href="../about">About</a></li>
-                        <li><a href="../contact">Contact</a></li>
+                        <li style="border-right:none"><a href="../contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-
         <div class="break"></div>
 
         <div id="astra-main">
-            <div id="copyright">Copyright &copy <script type="text/javascript">
-                var d = new Date();
-                document.write(d.getFullYear());
-            </script> Artisan WebCraft
-            </div>
-
             <div id="astra-title">
                 <div id="see-link" class="link-graphic"></div>
                 <div id="hear-link" class="link-graphic"></div>
                 <div id="experience-link" class="link-graphic"></div>
             </div>
 
-            <p id="main-text">
+            <div id="main-text">
                <div id="discover-container">
+                   <div id="discover-slideshow">
+                       <div id="slideshow">
+                           <div>
+                               <img src="img/1.jpg"  />
+                           </div>
+                           <div>
+                               <img src="img/2.jpg" />
+                           </div>
+                           <div>
+                               <img src="img/3.jpg" />
+                           </div>
+                           <div>
+                               <img src="img/4.jpg" />
+                           </div>
+                       </div>
+                       <div id="discover-flourish-right"><img src="../img/flourish-hr.png" /></div>
+                   </div>
 
-                    <div id="discover-img">
-                        <img src="img/symphonyfull.jpg" height="450"/>
-                    </div>
-                    <div id="discover-flourish"><img src="img/flourish-hr.png" /></div>
-                    <div id="discover-text">
+                   <div class="break"></div>
+
+                   <div id="discover-text">
                         Delight dedicated fans and win new subscribers with this fundraising gala.<br />
                         <br />
                         <ul>
@@ -95,10 +105,10 @@
                             <a href="http://www.gewaldmanagement.com" target="_blank"><img src="img/gewald-management-logo2.png"/></a>
                         </div>
                         <br />
-                        <figure id="epk"><a href="http://www.astradance.com/images/EPAKPress%20Kit_v9.pdf" target="_blank" style="text-decoration: none; font-weight:normal"><br /><img src="img/EPK.png" height="180px"/><figcaption><small>Discover more in our Electronic Press Kit!</small></figcaption></a></figure>
+                        <figure id="epk"><a href="http://www.astradance.com/ADT-EPK-2016-V1.pdf" target="_blank" style="text-decoration: none; font-weight:normal"><br /><img src="img/EPK.png" height="180px"/><figcaption><small>Discover more in our Electronic Press Kit!</small></figcaption></a></figure>
                     </div>
                 </div>
-            </p>
+            </div>
 
             <div id="experience-container">
                 <div class="html5gallery" data-skin="mediapage" data-showtitle="false" data-width="480" data-height="272" style="display:none;">
@@ -114,7 +124,7 @@
                 <div id="see-flourish-left"><img src="img/flourish-hl.png" /></div>
                 <div id="see-flourish-right"><img src="img/flourish-hr.png" /></div>
                 <!-- http://html5box.com for html5gallery stuff! -->
-                <div class="html5gallery" data-skin="mediapage" data-thumbshowtitle="false"  data-width="480" data-height="272" style="display:none;">
+                <div class="html5gallery" data-skin="mediapage" data-thumbshowtitle="false"  data-width="480" data-height="272" style="display:none; left:-35px">
 
                     <a href="img/cg1.jpg"><img src="img/cg1.jpg"></a>
                     <a href="img/cg2.jpg"><img src="img/cg2.jpg"></a>
@@ -142,7 +152,6 @@
                     <a href="img/cg24.jpg"><img src="img/cg24.jpg"></a>
                     <a href="img/cg25.jpg"><img src="img/cg25.jpg"></a>
                     <a href="img/cg26.jpg"><img src="img/cg26.jpg"></a>
-
                 </div>
             </div>
             <div id="hear-container">
@@ -158,23 +167,10 @@
                 <div id="composer-text">Our composer <a href=http://high-priestess-productions.com target=_blank>Regan Remy</a>, whose works have been heard on Lost, Alias, 24, Team America and on the stage at the Lincoln Center, gracing the ancient water temple in Bali, Indonesia and at Burning Man Festival.</div>
                 <div id="composer-img"><a href="http://high-priestess-productions.com" target="_blank"><img src="img/reganremy.jpg"  /></a></div>
             </div>
-            <div id="contact-container">
-                <div id="mgmt-contact">
-                    <a href="http://gewaldmanagement.com" target=_blank><img src="img/gewaldmgmt.png"></a>
-                </div>
-                <div id="mgmt-info">
-                    <strong>Robert Gewald Management, Inc.</strong><br />
-                    services@gewaldmanagement.com<br />
-                    242 East 19th Street<br />
-                    New York, NY 10003<br /><br />
-                    Tel: 212.753.0450<br />
-                    Tel: 800.652.8121<br />
-                    Fax: 212.935.3706<br />
-                </div>
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.212564733768!2d-73.98326399999999!3d40.73534799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599fff66c32d%3A0x637740b3c76964dd!2s242+E+19th+St%2C+New+York%2C+NY+10003!5e0!3m2!1sen!2sus!4v1438901584167" width="850" height="350" frameborder="0" style="border:1px" allowfullscreen></iframe>
-                </div>
-
+            <div id="copyright">Copyright &copy <script type="text/javascript">
+                var d = new Date();
+                document.write(d.getFullYear());
+            </script> Artisan WebCraft
             </div>
             <div id="right-corner-flourish"><img src="img/flourish-rc.png" /></div>
         </div>
@@ -182,40 +178,62 @@
 
     <script>
 
-        $(".menu-link").hover(function() {
-            $(this).css("color", "#dda410");
-            $(this).css("cursor", "pointer");
-        });
-
-        $(".menu-link").mouseleave(function() {
-            $(this).css("color", "white");
-            $(this).css("cursor", "normal");
-        });
-
-
-        $("#discover-link").click(function() {
-            $("#main-text").hide();
-            showTab('#discover','1600px');
-        });
-
         $("#experience-link").click(function() {
-            showTab('#experience','650px','<h3>Impassioned dancers will amaze and inspire!</h3>');
+            showTab('experience','1100px',"<img class='img-centered img-max-100' src='img/experience-title.png' />");
         });
 
         $("#hear-link").click(function() {
-            showTab('#hear','650px','<h3>Our award winning original score will delight and enthrall!</h3>');
+            showTab('hear','850px',"<img class='img-centered img-max-100' src='img/hear-title.png' />");
             $("#hear-container").css("display", "block");
             $("#composer-text").css("display", "block");
             $("#composer-img").css("display", "block");
         });
 
         $("#see-link").click(function() {
-            showTab('#see','1100px','<h3>Vigor, passion and variety that will fascinate and enrapture!</h3>');
+            showTab('see','1600px',"<img class='img-centered img-max-100' src='img/see-title.png' />");
         });
 
-        $("#contact-link").click(function() {
-            showTab('#contact','675px','<h3>Get in touch!</h3>');
-        });
+        function showTab(tabname,hgt,text) {
+            var container = '#' + tabname + '-container';
+            var link = '#' + tabname + '-link';
+            var onPic = '../img/' + tabname;
+
+            silence();
+            if( text ) {
+                $("#main-text").html(text);
+                $("#main-text").css("display", "block");
+            }
+            $("#hear-link").css("background-image" , "url(../img/hear.png)");
+            $("#see-link").css("background-image" , "url(../img/see.png)");
+            $("#experience-link").css("background-image" , "url(../img/experience.png)");
+            $(link).css("background-image" , "url(" + onPic + "On.png)");
+
+            $("#hear-container").css("display", "none");
+            $("#see-container").css("display", "none");
+            $("#composer-text").css("display", "none");
+            $("#composer-img").css("display", "none");
+            $("#experience-container").css("display", "none");
+            $("#discover-container").css("display", "none");
+
+
+            $(container).css("display","block");
+
+            if (/^\#see/.test(tabname)) {
+                $("#right-corner-flourish").hide();
+            }
+            else {
+                $("#right-corner-flourish").css("display", "block");
+            }
+
+            $("#astra-main").animate({
+                width:"900px",
+                height:hgt,
+                borderRadius: "10px",
+            } ,400);
+
+            $("#copyright").css("margin-top",hgt);
+
+        }
 
         var OverturePlaying = 0;
         var FinalePlaying = 0;
@@ -238,47 +256,6 @@
                 $("#audio-finale").css("background-image"," url(img/btnFinale.jpg)");
                 FinalePlaying = 0;
             }
-        }
-
-        function showTab(tabname,hgt,text) {
-            var container = tabname + '-container';
-            var link = tabname + '-link';
-            silence();
-            $(link).css("color","red");
-            $("#hear-container").css("display", "none");
-            $("#see-container").css("display", "none");
-            $("#composer-text").css("display", "none");
-            $("#composer-img").css("display", "none");
-            $("#experience-container").css("display", "none");
-            $("#contact-container").css("display", "none");
-            $("#discover-container").css("display", "none");
-            if( text ) {
-                $("#main-text").html(text);
-                $("#main-text").css("display", "block");
-            }
-
-            $(container).css("display","block");
-
-            if (/^\#see/.test(tabname)) {
-                $("#right-corner-flourish").hide();
-            }
-            else {
-                $("#right-corner-flourish").css("display", "block");
-            }
-
-            // reset the discover link to white in any other case
-            if (!/^\#discover/.test(tabname)) {
-                $("#discover-link").css("color","white");
-            }
-
-            $("#astra-main").animate({
-                width:"900px",
-                height:hgt,
-                borderRadius: "10px",
-            } ,400);
-
-            $("#copyright").css("margin-top",hgt);
-
         }
 
         function playOverture() {

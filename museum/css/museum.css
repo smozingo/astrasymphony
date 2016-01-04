@@ -1,0 +1,167 @@
+
+#astra-main {
+   /* height: 1950px;*/
+    height: auto;
+}
+#astra-title{
+    margin-left: 30px;
+}
+
+.picTitle {
+    margin: 0 0 30px 0;
+    position: relative;
+    top: 20px;
+}
+
+.artPic {
+    width: 100px;
+    position: relative;
+    top: 21px;
+    left:-5px;
+    float:left;
+    margin: 0 10px 15px 0;
+}
+
+#inspirationDiv {
+    padding:40px 0 16px 0;
+}
+
+#discover-img img {
+    height: 451px;
+    width: 674px;
+}
+
+#discover-flourish {
+    float:left;
+    top: -479px;
+}
+
+#discover-text {
+    margin: -465px 0 0 10px;
+    float: left;
+}
+
+#audio-khajuraho {
+    height:100px;
+    width:444px;
+    background-image: url(../img/btnKhajuraho.jpg);
+    cursor: pointer;
+}
+
+#khajuraho-preload {
+    background: url(../img/btnKhajurahoOn.jpg)  no-repeat -9999px -9999px;
+}
+
+#audio-akhenaten {
+    height:100px;
+    width:444px;
+    background-image: url(../img/btnAkhenaten.jpg);
+    cursor: pointer;
+}
+
+#akhenaten-preload {
+    background: url(../img/btnAkhenatenOn.jpg)  no-repeat -9999px -9999px;
+}
+
+#audio-theresa {
+    height:100px;
+    width:444px;
+    background-image: url(../img/btnTheresa.jpg);
+    cursor: pointer;
+}
+
+#theresa-preload {
+    background: url(../img/btnTheresaOn.jpg)  no-repeat -9999px -9999px;
+}
+
+#discover-container{
+    height: 1550px;
+}
+
+
+/* Smartphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #discover-container {
+        height: 2600px;
+    }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    #discover-container {
+        height: 1600px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    #discover-container {
+        height: 2900px;
+    }
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    #discover-container {
+        height: 1600px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    #discover-container {
+        height: 2450px;
+    }
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    #discover-container {
+        height: 1850px;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    #discover-container {
+        height: 2600px;
+    }
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    #discover-container {
+        height: 1550px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    #discover-container {
+        height: 2600px;
+    }
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    #discover-container {
+        height: 1550px;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    #discover-container {
+        height: 2600px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #discover-container {
+        height: 1550px;
+    }
+}
+
+
+#discover-text {
+    margin: -140px 0 0 30px;
+    float: left;
+}
+
+

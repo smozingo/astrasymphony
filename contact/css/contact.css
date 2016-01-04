@@ -1,0 +1,26 @@
+
+
+#astra-main {
+ /*   height: 570px;*/
+    height: auto;
+}
+
+#mgmt-info {
+    font-size:0.8em;
+    width:225px;
+    float:right;
+    position: relative;
+    left:-82px;
+    margin-bottom: 10px;
+}
+
+#mgmt-contact {
+    position:relative;
+    float:left;
+}
+
+#map {
+    padding:3px 0 55px 10px;
+    margin-top:20px;
+}
+
